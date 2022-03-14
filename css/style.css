@@ -112,6 +112,10 @@ ul {
     font-family: 'PT Sans', sans-serif;
     padding: 0 1.5rem;
 }
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: rgb(247, 164, 79);
+}
 .header__texto {
     text-align: center;
     padding-top: 5rem; 
@@ -177,15 +181,28 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-bottom: 5rem;
+    margin: 0 3rem 5rem 3rem;
 }
 .producto__contenido {
     text-align: center;
+    position: relative;
 }
-/* .producto__contenido img {
-    width: 20rem;
-    height: 25rem;
-} */
+.producto__contenido img {
+    width: 15rem;
+    height: 20rem;
+}
+.producto__contenido .foto__lago {
+    width: 30rem;
+    height: 18rem;
+}
+.producto__contenido .foto__kiwi {
+    width: 18rem;
+    height: 18rem;
+}
+.producto__contenido .foto__camara {
+    width: 25rem;
+    height: 18rem;
+}
 .nombre {
     font-size: 2rem;
     font-family: 'PT Sans', sans-serif;
@@ -206,6 +223,28 @@ ul {
     padding: 0 5rem;
     border-radius: 0.5rem;
 }
+.imagenes {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.imagenes .top__imagen {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s; 
+}
+.imagenes:hover .fondo__imagen {
+    opacity: 0;
+}
+.imagenes:hover .top__imagen {
+    opacity: 1;
+}
+
 
 /*login*/
 .main h1 {
