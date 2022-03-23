@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  font-family: "Lobster Two", cursive;
+  font-size: 5rem;
+  color: #000;
+  font-weight: 700; }
+
+h1, h2, h3, h4 {
+  font-family: "PT Sans", sans-serif; }
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 3rem 0 3rem 0; }
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center; }
+
+h3 {
+  font-size: 2.8rem; }
+
+h4 {
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: 400; }
+
+img {
+  max-width: 100%;
+  vertical-align: initial; }
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  color: #000; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.bg-verde {
+  background-color: #55897D; }
+
+.bg-amarillo {
+  background-color: #F5B16D; }
+
+.botton {
+  font-size: 2rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem; }
+
+.botton:hover {
+  color: #55897D; }
+
+.botton--modificado {
+  border: none;
+  margin: 1rem 0 1rem 0; }
+  .botton--modificado:hover {
+    cursor: pointer; }
+
+.header {
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden; }
+  .header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#64968c+0,ffffff+100&0.38+74,0.5+99 */
+    background: -moz-linear-gradient(top, rgba(100, 150, 140, 0.38) 0%, rgba(215, 228, 225, 0.38) 74%, rgba(253, 254, 254, 0.5) 99%, rgba(255, 255, 255, 0.5) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(100, 150, 140, 0.38) 0%, rgba(215, 228, 225, 0.38) 74%, rgba(253, 254, 254, 0.5) 99%, rgba(255, 255, 255, 0.5) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(100, 150, 140, 0.38) 0%, rgba(215, 228, 225, 0.38) 74%, rgba(253, 254, 254, 0.5) 99%, rgba(255, 255, 255, 0.5) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6164968c', endColorstr='#80ffffff',GradientType=0 );
+    /* IE6-9 */ }
+    .header .overlay .logo {
+      position: absolute; }
+    .header .overlay .navegacion {
+      text-align: center;
+      height: 100%;
+      position: relative;
+      z-index: 2; }
+  .header video {
+    display: block;
+    width: auto; }
+
+.navegacion a:hover {
+  font-size: 15rem;
+  color: #D2691E; }
+
+@media (max-width: 768px) {
+  a {
+    line-height: 2; }
+  .navegacion a:hover {
+    font-size: 10rem; } }
+
+@media (max-width: 480px) {
+  a {
+    font-size: 3rem;
+    line-height: 3; }
+  .navegacion a:hover {
+    font-size: 5rem; } }
+
+.header2 {
+  background-image: url("/imagenes/Photos/Recurso 10.png");
+  height: 22rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
+  .header2 .contenedor2 {
+    padding: 0 3rem 0 0; }
+  .header2 .nav {
+    display: block;
+    padding-top: 2rem;
+    text-align: right; }
+  .header2 .navegacion__enlace {
+    font-size: 1.5rem;
+    font-family: "PT Sans", sans-serif;
+    padding: 0 1.5rem; }
+  .header2__texto {
+    text-align: center;
+    padding-top: 5rem; }
+    .header2__texto h2 {
+      font-weight: 700;
+      text-transform: uppercase; }
+    .header2__texto p {
+      font-size: 2rem;
+      color: #FFF;
+      font-weight: 700; }
+  .header2 .logo {
+    position: absolute; }
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+  color: #F5B16D; }
+
+@media (max-width: 480px) {
+  .header2 .contenedor2 {
+    padding: 0; }
+  .header2 .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem; }
+  .header2 .navegacion__enlace {
+    line-height: 2; }
+  .header2__texto {
+    padding-top: 0; } }
+
+.nosotros__texto h3 {
+  text-align: center;
+  color: #F5B16D;
+  font-weight: 700; }
+
+.nosotros__texto p {
+  font-size: 1.2rem;
+  padding: 0 1rem 0 1rem;
+  text-align: justify; }
+
+.seccion h2 {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  width: auto; }
+
+.seccion__contenedor {
+  text-align: center; }
+  .seccion__contenedor p {
+    text-align: justify;
+    margin-top: 1rem; }
+
+.tienda {
+  background-color: rgba(85, 137, 125, 0.09); }
+  .tienda h1 {
+    margin: 0;
+    padding: 2rem; }
+
+.card .fondo__imagen {
+  width: 15rem;
+  height: 20rem; }
+
+.card .foto__lago {
+  width: 100%;
+  height: auto; }
+
+.card .foto__kiwi {
+  width: 100%;
+  height: 18rem; }
+
+.card .foto__camara {
+  width: 100%;
+  height: 18rem; }
+
+.card .libreta {
+  padding: 3.5rem 0 0 0; }
+
+.card .tarjeta {
+  padding: 5.5rem 0 0 0; }
+
+.card-body .nombre {
+  font-size: 2rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  margin: 0; }
+
+.card-body .precio {
+  font-size: 2.5rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: #F5B16D;
+  margin: 0; }
+
+.imagenes {
+  display: grid;
+  justify-content: center;
+  position: relative; }
+  .imagenes .top__imagen {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s; }
+  .imagenes:hover .fondo__imagen {
+    opacity: 0; }
+  .imagenes:hover .top__imagen {
+    opacity: 1; }
+
+.main h1 {
+  margin: 3rem 0 0 0;
+  color: #F5B16D; }
+
+.main .formulario {
+  width: 30rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem; }
+  .main .formulario .campo {
+    margin-bottom: 1rem; }
+    .main .formulario .campo label {
+      color: #FFF;
+      font-weight: 700;
+      margin: 1rem;
+      font-size: 2rem;
+      display: block; }
+    .main .formulario .campo .input__text {
+      width: 100%;
+      border: none;
+      padding: 1rem;
+      border-radius: .5rem; }
+
+.direccion {
+  display: flex;
+  justify-content: center; }
+
+.formulario__texto p {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5rem;
+  line-height: 2; }
+
+.formulario__texto a {
+  color: #F5B16D;
+  font-size: 1.5rem; }
+
+@media (max-width: 480px) {
+  .main .formulario {
+    width: auto;
+    margin: 2rem 1rem 2rem 1rem; } }
+
+@media (max-width: 768px) {
+  .direccion .botton--modificado {
+    width: 100%; } }
+
+.card-body .card-text p {
+  text-align: justify; }
+
+.card-body h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 700; }
+
+.col-md-12 .formulario__campo {
+  border: 0.5rem solid #F5B16D;
+  background-color: #F5B16D;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 100%; }
+
+.col-md-9 .botton {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .col-md-9 .botton {
+    width: 100%; } }
+
+.footer {
+  padding: 2rem 1rem 0.5rem 1rem; }
+  .footer__contenido {
+    display: flex;
+    justify-content: space-around; }
+  .footer__contenedor {
+    text-align: center; }
+    .footer__contenedor h4 {
+      margin-bottom: 1rem; }
+    .footer__contenedor li img {
+      padding: 0 0.2rem; }
+    .footer__contenedor img {
+      padding: 0 1rem; }
+  .footer .footer__cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+
+.parrafo {
+  color: #FFF; }
+
+.logo__footer {
+  height: 60px; }
+
+@media (max-width: 480px) {
+  .footer__contenido {
+    display: block;
+    text-align: center; }
+  .footer__contenedor {
+    margin-bottom: 1rem; }
+  .logo {
+    top: -2rem;
+    left: 0;
+    width: 15%;
+    height: 15%; } }

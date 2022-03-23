@@ -1,0 +1,65 @@
+.header2 {
+    background-image: url("/imagenes/Photos/Recurso\ 10.png");
+    height: 22rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    .contenedor2 {
+        padding: 0 3rem 0 0;
+    }
+
+    .nav{
+        display: block;
+        padding-top: 2rem;
+        text-align: right;
+    }
+   .navegacion__enlace {
+        font-size: 1.5rem;
+        font-family: $fuentePrincipal;
+        padding: 0 1.5rem;
+    }
+   
+
+    &__texto {
+        text-align: center;
+        padding-top: 5rem;
+
+        h2 {
+            font-weight: 700;
+            text-transform: uppercase
+        }
+        p {
+            font-size: 2rem;
+            color: $blanco;
+            font-weight: 700;
+        }
+    }
+    .logo {
+        position: absolute;
+    }
+     
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: $amarillo;
+} 
+@media (max-width:  $movil) {
+   
+    .header2 .contenedor2 {
+        padding: 0;
+    }
+    .header2 .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    .header2 .navegacion__enlace {
+        line-height: 2;
+    }
+    .header2__texto {
+        padding-top: 0;
+    }
+}

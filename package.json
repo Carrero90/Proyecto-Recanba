@@ -1,0 +1,25 @@
+{
+  "name": "proyectorecanba",
+  "version": "1.0.0",
+  "description": "Web venta de Cuadros canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/app.scss css/app.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carrero90/Proyecto-Recanba.git"
+  },
+  "author": "Cristal Naranjo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carrero90/Proyecto-Recanba/issues"
+  },
+  "homepage": "https://github.com/Carrero90/Proyecto-Recanba#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

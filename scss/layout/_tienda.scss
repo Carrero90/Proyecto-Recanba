@@ -1,0 +1,73 @@
+.tienda {
+    background-color: rgba(85, 137, 125, 0.09);
+
+    h1 {
+        margin: 0;
+        padding: 2rem;
+    }
+}
+.card {
+
+    .fondo__imagen {
+        width: 15rem;
+        height: 20rem;
+    }
+    
+    .foto__lago {
+        width: 100%;
+        height: auto; 
+    }
+    .foto__kiwi {
+        width: 100%;
+        height: 18rem;
+    }
+    .foto__camara {
+        width: 100%;
+        height: 18rem;
+    }
+    .libreta {
+        padding: 3.5rem 0 0 0; 
+    }
+    .tarjeta {
+        padding: 5.5rem 0 0 0;
+    }
+}
+.card-body {
+    
+    .nombre {
+        font-size: 2rem;
+        font-family: $fuentePrincipal;
+        font-weight: $bold;
+        margin: 0;
+    }
+    .precio {
+        font-size: 2.5rem;
+        font-family: $fuentePrincipal;
+        font-weight: $bold;
+        color: $amarillo;
+        margin: 0;
+    }
+   
+}
+
+.imagenes {
+    display: grid;
+    justify-content: center;
+    position: relative;
+
+    .top__imagen {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        opacity: 0;
+        transition: 0.5s; 
+    }
+    &:hover .fondo__imagen {
+        opacity: 0;
+    }
+    &:hover .top__imagen {
+        opacity: 1;
+    }
+}
+
+

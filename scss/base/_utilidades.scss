@@ -1,0 +1,26 @@
+.bg-verde {
+    background-color: $verde;
+}
+.bg-amarillo {
+    background-color: $amarillo;
+}
+.botton {
+    font-size: 2rem;
+    font-family: $fuentePrincipal;
+    font-weight: $bold;
+    color: $blanco;
+    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+}
+.botton:hover {
+    color:  $verde;
+}
+
+.botton--modificado {
+    border: none;
+    margin: 1rem 0 1rem 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
