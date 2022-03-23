@@ -114,7 +114,7 @@ ul {
     font-size: 5rem; } }
 
 .header2 {
-  background-image: url("/imagenes/Photos/Recurso 10.png");
+  background-image: url("../imagenes/Photos/Recurso 10.png");
   height: 22rem;
   background-size: cover;
   background-repeat: no-repeat;
