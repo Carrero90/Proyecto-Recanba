@@ -31,12 +31,8 @@
 .col-md-9 {
     .botton {
         width: 100%;
+        @include tablet {
+            width: 100%;
+        }
     }
-}
-@media (max-width:  $tablet) {
-   
-    .col-md-9 .botton {
-        width: 100%;
-    }
-    
 }

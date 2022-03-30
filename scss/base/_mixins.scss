@@ -1,0 +1,12 @@
+/** Media Queries **/
+@mixin movil {
+    @media (max-width: #{$movil}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}

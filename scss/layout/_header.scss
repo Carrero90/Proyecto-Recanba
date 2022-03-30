@@ -8,23 +8,42 @@
 
     .contenedor2 {
         padding: 0 3rem 0 0;
+
+        @include movil {
+            padding: 0;
+        }
     }
 
     .nav{
         display: block;
         padding-top: 2rem;
         text-align: right;
+
+        @include movil {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.5rem;
+        }
     }
    .navegacion__enlace {
         font-size: 1.5rem;
         font-family: $fuentePrincipal;
         padding: 0 1.5rem;
+
+        @include movil{
+            line-height: 2;  
+        }
     }
    
 
     &__texto {
         text-align: center;
         padding-top: 5rem;
+        
+        @include movil {
+            padding-top: 0;
+        }
 
         h2 {
             font-weight: 700;
@@ -45,21 +64,3 @@
 .navegacion__enlace:hover {
     color: $amarillo;
 } 
-@media (max-width:  $movil) {
-   
-    .header2 .contenedor2 {
-        padding: 0;
-    }
-    .header2 .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1.5rem;
-    }
-    .header2 .navegacion__enlace {
-        line-height: 2;
-    }
-    .header2__texto {
-        padding-top: 0;
-    }
-}

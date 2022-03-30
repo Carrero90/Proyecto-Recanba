@@ -13,9 +13,9 @@
         background: linear-gradient(to bottom,  rgba(100,150,140,0.38) 0%,rgba(215,228,225,0.38) 74%,rgba(253,254,254,0.5) 99%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6164968c', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
         
-    .logo {
-        position: absolute;
-    }
+        .logo {
+            position: absolute;
+        }
         
         .navegacion { 
             text-align: center;
@@ -30,25 +30,30 @@
         width: auto;
     }
 }
-.navegacion a:hover{
-    font-size: 15rem;
-    color: $chocolate;
-}
-@media (max-width:  $tablet) {
-    a {
+
+.navegacion a {
+
+    &:hover {
+        font-size: 15rem;
+        color: $chocolate;
+    }
+    @include tablet {
         line-height: 2;
+        
+        &:hover{
+         font-size: 10rem;
+        }
     }
-    .navegacion a:hover{
-        font-size: 10rem;
-    }
-}
-@media (max-width:  $movil) {
-    a {
+
+    @include movil {
         font-size: 3rem;
         line-height: 3;
-    }
-    .navegacion a:hover{
-     font-size: 5rem;
+        
+        &:hover{
+         font-size: 5rem;
+        }
     }
 }
+
+
 

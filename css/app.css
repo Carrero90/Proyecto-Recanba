@@ -36,7 +36,7 @@ img {
   vertical-align: initial; }
 
 p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 1rem;
   color: #000; }
 
@@ -68,6 +68,7 @@ ul {
   .botton--modificado:hover {
     cursor: pointer; }
 
+/** Media Queries **/
 .header {
   position: relative;
   max-height: 100vh;
@@ -101,17 +102,17 @@ ul {
   color: #D2691E; }
 
 @media (max-width: 768px) {
-  a {
+  .navegacion a {
     line-height: 2; }
-  .navegacion a:hover {
-    font-size: 10rem; } }
+    .navegacion a:hover {
+      font-size: 10rem; } }
 
 @media (max-width: 480px) {
-  a {
+  .navegacion a {
     font-size: 3rem;
     line-height: 3; }
-  .navegacion a:hover {
-    font-size: 5rem; } }
+    .navegacion a:hover {
+      font-size: 5rem; } }
 
 .header2 {
   background-image: url("../imagenes/Photos/Recurso 10.png");
@@ -122,17 +123,32 @@ ul {
   position: relative; }
   .header2 .contenedor2 {
     padding: 0 3rem 0 0; }
+    @media (max-width: 480px) {
+      .header2 .contenedor2 {
+        padding: 0; } }
   .header2 .nav {
     display: block;
     padding-top: 2rem;
     text-align: right; }
+    @media (max-width: 480px) {
+      .header2 .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5rem; } }
   .header2 .navegacion__enlace {
     font-size: 1.5rem;
     font-family: "PT Sans", sans-serif;
     padding: 0 1.5rem; }
+    @media (max-width: 480px) {
+      .header2 .navegacion__enlace {
+        line-height: 2; } }
   .header2__texto {
     text-align: center;
     padding-top: 5rem; }
+    @media (max-width: 480px) {
+      .header2__texto {
+        padding-top: 0; } }
     .header2__texto h2 {
       font-weight: 700;
       text-transform: uppercase; }
@@ -146,19 +162,6 @@ ul {
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
   color: #F5B16D; }
-
-@media (max-width: 480px) {
-  .header2 .contenedor2 {
-    padding: 0; }
-  .header2 .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.5rem; }
-  .header2 .navegacion__enlace {
-    line-height: 2; }
-  .header2__texto {
-    padding-top: 0; } }
 
 .nosotros__texto h3 {
   text-align: center;
@@ -259,10 +262,17 @@ ul {
       border: none;
       padding: 1rem;
       border-radius: .5rem; }
+  @media (max-width: 480px) {
+    .main .formulario {
+      width: auto;
+      margin: 2rem 1rem 2rem 1rem; } }
 
 .direccion {
   display: flex;
   justify-content: center; }
+  @media (max-width: 480px) {
+    .direccion .botton--modificado {
+      width: 100%; } }
 
 .formulario__texto p {
   text-align: center;
@@ -273,15 +283,6 @@ ul {
 .formulario__texto a {
   color: #F5B16D;
   font-size: 1.5rem; }
-
-@media (max-width: 480px) {
-  .main .formulario {
-    width: auto;
-    margin: 2rem 1rem 2rem 1rem; } }
-
-@media (max-width: 768px) {
-  .direccion .botton--modificado {
-    width: 100%; } }
 
 .card-body .card-text p {
   text-align: justify; }
@@ -305,16 +306,19 @@ ul {
 
 .col-md-9 .botton {
   width: 100%; }
-
-@media (max-width: 768px) {
-  .col-md-9 .botton {
-    width: 100%; } }
+  @media (max-width: 768px) {
+    .col-md-9 .botton {
+      width: 100%; } }
 
 .footer {
   padding: 2rem 1rem 0.5rem 1rem; }
   .footer__contenido {
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 480px) {
+      .footer__contenido {
+        display: block;
+        text-align: center; } }
   .footer__contenedor {
     text-align: center; }
     .footer__contenedor h4 {
@@ -323,6 +327,9 @@ ul {
       padding: 0 0.2rem; }
     .footer__contenedor img {
       padding: 0 1rem; }
+    @media (max-width: 480px) {
+      .footer__contenedor {
+        margin-bottom: 1rem; } }
   .footer .footer__cont {
     display: flex;
     justify-content: space-between;
@@ -335,11 +342,6 @@ ul {
   height: 60px; }
 
 @media (max-width: 480px) {
-  .footer__contenido {
-    display: block;
-    text-align: center; }
-  .footer__contenedor {
-    margin-bottom: 1rem; }
   .logo {
     top: -2rem;
     left: 0;
