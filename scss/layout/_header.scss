@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-
+   
     .contenedor2 {
         padding: 0 3rem 0 0;
 
@@ -18,7 +18,7 @@
         display: block;
         padding-top: 2rem;
         text-align: right;
-
+        
         @include movil {
             display: flex;
             flex-direction: column;
@@ -30,7 +30,7 @@
         font-size: 1.5rem;
         font-family: $fuentePrincipal;
         padding: 0 1.5rem;
-
+        
         @include movil{
             line-height: 2;  
         }
@@ -41,26 +41,32 @@
         text-align: center;
         padding-top: 5rem;
         
-        @include movil {
-            padding-top: 0;
-        }
-
-        h2 {
-            font-weight: 700;
-            text-transform: uppercase
-        }
         p {
             font-size: 2rem;
-            color: $blanco;
             font-weight: 700;
+            color: $blanco;
         }
+
+        @include movil {
+            padding-top: 2rem;
+                        
+            p {
+                font-size: 1.5rem;
+                
+            }
+        }
+        
+
+     
     }
     .logo {
         position: absolute;
+        top: 1rem;
+        left: 1rem;
     }
      
 }
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
-    color: $amarillo;
+    color: $verde;
 } 

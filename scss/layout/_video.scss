@@ -34,14 +34,15 @@
 .navegacion a {
 
     &:hover {
-        font-size: 15rem;
+        font-size: 10rem;
         color: $chocolate;
+        transition: 3s;
     }
     @include tablet {
         line-height: 2;
         
         &:hover{
-         font-size: 10rem;
+         font-size: 8rem;
         }
     }
 

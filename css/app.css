@@ -98,14 +98,15 @@ ul {
     width: auto; }
 
 .navegacion a:hover {
-  font-size: 15rem;
-  color: #D2691E; }
+  font-size: 10rem;
+  color: #D2691E;
+  transition: 3s; }
 
 @media (max-width: 768px) {
   .navegacion a {
     line-height: 2; }
     .navegacion a:hover {
-      font-size: 10rem; } }
+      font-size: 8rem; } }
 
 @media (max-width: 480px) {
   .navegacion a {
@@ -146,24 +147,25 @@ ul {
   .header2__texto {
     text-align: center;
     padding-top: 5rem; }
-    @media (max-width: 480px) {
-      .header2__texto {
-        padding-top: 0; } }
-    .header2__texto h2 {
-      font-weight: 700;
-      text-transform: uppercase; }
     .header2__texto p {
       font-size: 2rem;
-      color: #FFF;
-      font-weight: 700; }
+      font-weight: 700;
+      color: #FFF; }
+    @media (max-width: 480px) {
+      .header2__texto {
+        padding-top: 2rem; }
+        .header2__texto p {
+          font-size: 1.5rem; } }
   .header2 .logo {
-    position: absolute; }
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
 
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
-  color: #F5B16D; }
+  color: #55897D; }
 
-.nosotros__texto h3 {
+.nosotros__texto h2 {
   text-align: center;
   color: #F5B16D;
   font-weight: 700; }
@@ -183,6 +185,12 @@ ul {
   .seccion__contenedor p {
     text-align: justify;
     margin-top: 1rem; }
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 3.5rem; }
+  h3 {
+    font-size: 2rem; } }
 
 .tienda {
   background-color: rgba(85, 137, 125, 0.09); }
@@ -284,7 +292,15 @@ ul {
   color: #F5B16D;
   font-size: 1.5rem; }
 
-.card-body .card-text p {
+@media (max-width: 480px) {
+  .main h1, h2 {
+    font-size: 2rem; } }
+
+.card-body h2 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+.card-body .texto {
   text-align: justify; }
 
 .card-body h3 {
@@ -323,6 +339,8 @@ ul {
     text-align: center; }
     .footer__contenedor h4 {
       margin-bottom: 1rem; }
+    .footer__contenedor li {
+      color: #FFF; }
     .footer__contenedor li img {
       padding: 0 0.2rem; }
     .footer__contenedor img {

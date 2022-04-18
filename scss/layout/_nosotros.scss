@@ -1,5 +1,5 @@
 .nosotros__texto {
-    h3 {
+    h2 {
         text-align: center;
         color: $amarillo;
         font-weight: $bold;
@@ -23,5 +23,14 @@
             text-align: justify;
             margin-top: 1rem;
         }
+    }
+}
+
+@include movil {
+    main h1 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2rem;
     }
 }
